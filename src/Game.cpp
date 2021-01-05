@@ -17,7 +17,7 @@ bool Game::initialize() {
 	running = true;
 	
 	for (size_t i = 0; i < INVENTORY_WIDTH - 2; i++) {
-		swords.push_back(new Weapon(mRenderer, Vector2<float>(i * 108, 0), Vector2<int>(i, 0), "sword.png"));
+		swords.push_back(new Weapon(mRenderer, Vector2<float>(i * 108, 0), Vector2<int>(i, 0), "res/sword.png"));
 		inventoryObjects[0][i] = swords[i];
 	}
 	
